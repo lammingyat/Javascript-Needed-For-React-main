@@ -1,0 +1,16 @@
+<html>
+<head>
+
+</head>
+
+<body>
+    <script type = "text/javascript">
+        async function GetWeather() {         
+        const response = await fetch("http://example.com/movies.json");
+        alert("ABC");
+        const weater = await response.json();
+        alert(weater);
+}
+        GetWeather();
+    </script>
+</body>

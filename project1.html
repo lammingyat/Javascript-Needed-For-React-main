@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+
+<body>
+    <p id="greeting"></p>
+    <p id="square"></p>
+    <p id="add"></p>
+    <p id="isEven"></p>
+    <p id="reverseString"></p>
+    <script type = "text/javascript">
+        greeting = (name) => "Hello, " + name + "!";
+        square = (num) => num * num;
+        add = (a,b) => a+b;
+        isEven = (num) => num % 2 === 0;
+        reverseString = (str) => str.split("").reverse().join("");
+
+        document.getElementById("greeting").innerHTML = greeting("Nick");
+        document.getElementById("square").innerHTML = square(10);
+        document.getElementById("add").innerHTML = add(6,5);
+        document.getElementById("isEven").innerHTML = isEven(4);
+        document.getElementById("reverseString").innerHTML = reverseString("apple");  
+    </script>
+</body>
+</html>

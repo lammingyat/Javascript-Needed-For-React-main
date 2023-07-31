@@ -1,0 +1,37 @@
+<html>
+<head>
+
+</head>
+
+<body>
+    <p id="output"></p>
+    <script type = "text/javascript">
+        
+    let users = [{
+  name: "Nick Lam",
+  age: 36,
+  email: "lammingyatca@gmail.com",
+  tele: "6474685282",
+  city: "Richmond Hill"
+}
+,
+{
+  name: "Ming Yat Lam",
+  age: 36,
+  email: "lammingyat1986@gmail.com",
+  tele: "52820625",
+  city: "Hong Kong"
+  }
+]
+
+users.forEach(element => {
+  for(const [key, value] of Object.entries(element))
+  {
+    document.getElementById("output").innerHTML +=key +":"+value+"<br>"
+    console.log(key +":"+value);
+  }
+}
+);
+    </script>
+</body>
+</html>

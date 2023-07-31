@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+    <table>
+    <tr>
+   <td style="border: 1px solid black;">
+    abc
+   </td>
+   <td style="border: 1px solid black;">
+    def
+   </td>
+    <td style='border: 1px solid black;'>beef</td>
+    </tr>
+    </table>
+    <div id="productlist"></div>
+
+   
+    <script type = "text/javascript">
+        
+    let products = [{
+  name: "banana",
+  category: "food",
+  price: 2,
+}
+,
+{
+    name: "beef",
+  category: "food",
+  price: 3,
+  }
+  ,
+{
+    name: "fork",
+  category: "tableware",
+  price: 2,
+  }
+
+  ,
+{
+    name: "spoon",
+  category: "tableware",
+  price: 3,
+  }
+  ,
+{
+    name: "doll",
+  category: "toy",
+  price: 3,
+  }
+  ,
+{
+    name: "gundom",
+  category: "toy",
+  price: 4,
+  }
+]
+
+const p = document.getElementById("productlist");
+p.textContent ="<table><tr>";
+
+products.forEach(element => {
+    
+    p.textContent+="<td>"+element.name+"</td>";
+    //p.append("<td style='border: 1px solid black;'>"+element.name+"</td>");
+}
+);
+p.textContent+="</tr></table>";
+    </script>
+</body>
+</html>
